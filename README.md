@@ -1,6 +1,6 @@
 # Pure React App (React Element)
 
-This is a Pure React App
+This is a Pure React App created using React.createElement()
 
 ## Table of contents
 
