@@ -57,8 +57,15 @@ The above React.createElement() function returns an object:
 }
 ```
 
-And finally it renders to the DOM using ReactDOM.createRoot(document.getElementById("root")).render(App()):
+And finally it renders to the DOM using:
 
+```
+ ReactDOM.createRoot(document.getElementById("root")).render(
+  React.createElement(App)
+);
+```
+
+Output: 
 ```
 <div>
   <h1 class='title'>React is Rendered</h1>
