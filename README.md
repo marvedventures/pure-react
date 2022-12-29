@@ -1,4 +1,4 @@
-# Pure React App
+# Pure React App (React Elements)
 
 This is a Pure React App
 
