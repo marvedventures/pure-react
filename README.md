@@ -57,12 +57,10 @@ The above React.createElement() function returns an object:
 }
 ```
 
-And finally it renders to the DOM using:
+And finally it renders to the ReactDOM v18 using:
 
 ```
- ReactDOM.createRoot(document.getElementById("root")).render(
-  React.createElement(App)
-);
+ ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
 ```
 
 Output: 
