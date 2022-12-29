@@ -33,7 +33,7 @@ const Person = props => {
   ]);
 };
 
-const element = React.createElement(Person,{name: "Marvin", occupation: "Full-Stack Developer"},null )
+const App = React.createElement(Person,{name: "Marvin", occupation: "Full-Stack Developer"},null )
 ```
 
 The above React.createElement() function returns an object:
