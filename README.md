@@ -35,8 +35,10 @@ const Person = props => {
 
 const element = React.createElement(Person,{name: "Marvin", occupation: "Full-Stack Developer"},null )
 ```
+
 The above React.createElement() function returns an object:
 
+```
 {
   type: 'Person',
   props: {
@@ -45,6 +47,8 @@ The above React.createElement() function returns an object:
     occupation:'Full-Stack Developer'
   }
 }
+```
+
 And finally it renders to the DOM using ReactDOM.render():
 
 ```
