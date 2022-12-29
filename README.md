@@ -47,7 +47,8 @@ The above React.createElement() function returns an object:
       {
         type: 'h1',
         props: {
-          className: 'title'
+          className: 'title',
+          key: '1'
           children: 'React is Rendered'
         }
       }
