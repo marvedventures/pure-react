@@ -26,34 +26,44 @@ An Element is a plain object describing what you want to appear on the screen in
 The object representation of React Element would be as follows:
 
 ```
-const Person = props => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, props.name),
-    React.createElement("p", {}, props.occupation),
-  ]);
-};
 
-const App = React.createElement(Person,{name: "Marvin", occupation: "Full-Stack Developer"},null )
+const App = () => {
+return React.createElement("div", {}, [
+    React.createElement(
+      "h1",
+      { className: "title", key: "1" },
+      "React is Rendered"
+    ),
+}
 ```
 
 The above React.createElement() function returns an object:
 
 ```
 {
-  type: 'Person',
+  type: 'div',
   props: {
-    children: 'null',
-    name: 'Marvin',
-    occupation:'Full-Stack Developer'
+    children: [
+      {
+        type: 'h1',
+        props: {
+          className: 'title'
+          children: 'React is Rendered'
+        }
+      }
+    ]
+    }
   }
 }
 ```
 
-And finally it renders to the DOM using ReactDOM.render():
+And finally it renders to the DOM using ReactDOM.createRoot(document.getElementById("root")).render(App()):
 
 ```
-<h1>Marvin</div>
-<p>Full-Stack Developer</p>
+<div>
+  <h1 class='title'>React is Rendered</h1>
+</div>
+
 ```
 
 
