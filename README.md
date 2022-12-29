@@ -64,11 +64,13 @@ And finally it renders to the ReactDOM v18 using:
 ```
 
 Output: 
+
 ```
+...
 <div>
   <h1 class='title'>React is Rendered</h1>
 </div>
-
+...
 ```
 
 
