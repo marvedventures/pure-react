@@ -41,21 +41,20 @@ The above React.createElement() function returns an object:
 
 ```
 {
-  type: 'div',
+  type: "div",
   props: {
     children: [
       {
-        type: 'h1',
-        props: {
-          className: 'title',
-          key: '1'
-          children: 'React is Rendered'
-        }
-      }
-    ]
-    }
-  }
-}
+        type: "h1",
+        props: { 
+          className: "title", 
+          key: "1", 
+          children: "React is Rendered" 
+        },
+      },
+    ],
+  },
+};
 ```
 
 And finally it renders to the ReactDOM v18 using:
